@@ -70,11 +70,19 @@ h2 {
 .grid-container .item:first-of-type .button {
   color: hsl(31, 77%, 52%);
 }
+.grid-container .item:first-of-type .button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
 .grid-container .item:nth-of-type(2) {
   background-color: hsl(184, 100%, 22%);
 }
 .grid-container .item:nth-of-type(2) .button {
   color: hsl(184, 100%, 22%);
+}
+.grid-container .item:nth-of-type(2) .button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
 }
 .grid-container .item:last-of-type {
   background-color: hsl(179, 100%, 13%);
@@ -84,6 +92,10 @@ h2 {
 .grid-container .item:last-of-type .button {
   color: hsl(179, 100%, 13%);
 }
+.grid-container .item:last-of-type .button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
 .button {
   background-color: hsl(0, 0%, 95%);
   padding: 11px 28px;
@@ -91,4 +103,6 @@ h2 {
   display: inline-block;
   width: max-content;
   font-weight: 400;
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
 }

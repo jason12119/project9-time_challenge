@@ -84,12 +84,20 @@ h2 {
       border-bottom-left-radius: 8px;
       .button {
         color: @Bright-orange;
+        &:hover {
+          color: @Very-light-gray;
+          background-color: transparent;
+        }
       }
     }
     &:nth-of-type(2) {
       background-color: @Dark-cyan;
       .button {
         color: @Dark-cyan;
+        &:hover {
+          color: @Very-light-gray;
+          background-color: transparent;
+        }
       }
     }
     &:last-of-type {
@@ -98,6 +106,10 @@ h2 {
       border-bottom-right-radius: 8px;
       .button {
         color: @Very-dark-cyan;
+        &:hover {
+          color: @Very-light-gray;
+          background-color: transparent;
+        }
       }
     }
   }
@@ -110,4 +122,6 @@ h2 {
   display: inline-block;
   width: max-content;
   font-weight: 400;
+  cursor: pointer;
+  border: 2px solid @Very-light-gray;
 }
