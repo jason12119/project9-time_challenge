@@ -1,0 +1,113 @@
+.paddingTB20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.paddingTB40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.paddingTB80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.paddingLR0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+@Bright-orange: hsl(31, 77%, 52%);
+@Dark-cyan: hsl(184, 100%, 22%);
+@Very-dark-cyan: hsl(179, 100%, 13%);
+
+@Transparent-white: hsla(0, 0%, 100%, 0.75);
+@Very-light-gray: hsl(0, 0%, 95%);
+
+body {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Lexend Deca', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: @Very-light-gray;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: @Very-light-gray;
+  padding-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // grid-auto-columns: minmax(350px, 350px);
+  border-radius: 20px;
+
+  gap: 0;
+  .item {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .group {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 60px;
+
+      img {
+        width: 60px;
+        padding-bottom: 30px;
+      }
+
+      p {
+        color: @Transparent-white;
+        max-width: 220px;
+        font-weight: 400;
+      }
+    }
+    &:first-of-type {
+      background-color: @Bright-orange;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      .button {
+        color: @Bright-orange;
+      }
+    }
+    &:nth-of-type(2) {
+      background-color: @Dark-cyan;
+      .button {
+        color: @Dark-cyan;
+      }
+    }
+    &:last-of-type {
+      background-color: @Very-dark-cyan;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      .button {
+        color: @Very-dark-cyan;
+      }
+    }
+  }
+}
+
+.button {
+  background-color: @Very-light-gray;
+  padding: 11px 28px;
+  border-radius: 25px;
+  display: inline-block;
+  width: max-content;
+  font-weight: 400;
+}
