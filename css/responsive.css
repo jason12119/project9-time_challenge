@@ -1,0 +1,28 @@
+@media screen and (max-width: 680px) {
+  .grid-container {
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+    width: 85%;
+  }
+  .grid-container .item .group {
+    padding-bottom: 20px;
+  }
+  .grid-container .item .group p {
+    padding-bottom: 0;
+  }
+  .grid-container .item .button {
+    margin-bottom: 20px;
+  }
+  .grid-container .item:first-of-type {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .grid-container .item:last-of-type {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
